@@ -1,6 +1,6 @@
 exports.up = function (knex) {
   // SİHRİNİZİ GÖSTERİN
-  knex.schema.createTable("cars", (table) => {
+  return knex.schema.createTable("cars", (table) => {
     table.increments("id").primary();
     table.string("vin").notNullable().unique();
     table.string("make").notNullable();
@@ -13,5 +13,5 @@ exports.up = function (knex) {
 
 exports.down = function (knex) {
   // SİHRİNİZİ GÖSTERİN
-  knex.schema.dropTableIfExists("cars");
+  return knex.schema.dropTableIfExists("cars");
 };
