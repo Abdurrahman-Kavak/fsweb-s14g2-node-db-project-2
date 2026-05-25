@@ -4,15 +4,173 @@
       "name": "jest"
     },
     "summary": {
-      "tests": 0,
-      "passed": 0,
-      "failed": 0,
+      "tests": 13,
+      "passed": 6,
+      "failed": 7,
       "pending": 0,
       "skipped": 0,
       "other": 0,
-      "start": 1779710125176,
-      "stop": 1779710125754
+      "start": 1779710158794,
+      "stop": 1779710159896
     },
-    "tests": []
+    "tests": [
+      {
+        "name": "[0] sanity check",
+        "duration": 1,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js"
+      },
+      {
+        "name": "server.js [GET] /api/cars [1] gets the correct number of cars",
+        "duration": 26,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [GET] /api/cars"
+      },
+      {
+        "name": "server.js [GET] /api/cars [2] gets the correct cars",
+        "duration": 24,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [GET] /api/cars"
+      },
+      {
+        "name": "server.js [GET] /api/cars/:id [3] gets the correct car",
+        "duration": 28,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [GET] /api/cars/:id"
+      },
+      {
+        "name": "server.js [GET] /api/cars/:id [4] responds with 404 on id not found",
+        "duration": 23,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [GET] /api/cars/:id"
+      },
+      {
+        "name": "server.js [POST] /api/cars [5] creates a car in the database",
+        "duration": 49,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [6] responds with the newly created car",
+        "duration": 42,
+        "status": "failed",
+        "message": "Error: expect(received).toMatchObject(expected)\n\n- Expected  - 6\n+ Received  + 0\n\n  Object {\n    \"id\": 1,\n-   \"make\": \"toyota\",\n-   \"mileage\": 250000,\n-   \"model\": \"prius\",\n-   \"title\": \"salvage\",\n-   \"transmission\": \"CVT\",\n-   \"vin\": \"11111111111111111\",\n  }\n",
+        "trace": "at Object.toMatchObject (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:93:25)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [7] responds with a 400 and proper error on missing vin",
+        "duration": 17,
+        "status": "failed",
+        "message": "Error: expect(received).toHaveProperty(path, value)\n\nExpected path: \"message\"\n\nExpected value: \"vin is missing\"\nReceived value: \"undefined adı eksik\"\n",
+        "trace": "at Object.toHaveProperty (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:101:24)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [8] responds with a 400 and proper error on missing make",
+        "duration": 9,
+        "status": "failed",
+        "message": "Error: expect(received).toHaveProperty(path, value)\n\nExpected path: \"message\"\n\nExpected value: \"make is missing\"\nReceived value: \"undefined adı eksik\"\n",
+        "trace": "at Object.toHaveProperty (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:107:24)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [9] responds with a 400 and proper error on missing model",
+        "duration": 9,
+        "status": "failed",
+        "message": "Error: expect(received).toHaveProperty(path, value)\n\nExpected path: \"message\"\n\nExpected value: \"model is missing\"\nReceived value: \"undefined adı eksik\"\n",
+        "trace": "at Object.toHaveProperty (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:113:24)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [10] responds with a 400 and proper error on missing mileage",
+        "duration": 9,
+        "status": "failed",
+        "message": "Error: expect(received).toHaveProperty(path, value)\n\nExpected path: \"message\"\n\nExpected value: \"mileage is missing\"\nReceived value: \"undefined adı eksik\"\n",
+        "trace": "at Object.toHaveProperty (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:119:24)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [11] responds with a 400 and proper error on invalid vin",
+        "duration": 9,
+        "status": "failed",
+        "message": "Error: expect(received).toHaveProperty(path, value)\n\nExpected path: \"message\"\n\nExpected value: \"vin abc is invalid\"\nReceived value: \"vin abc geçersizdir\"\n",
+        "trace": "at Object.toHaveProperty (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:125:24)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [12] responds with a 400 and proper error on non-unique vin",
+        "duration": 19,
+        "status": "failed",
+        "message": "Error: expect(received).toHaveProperty(path, value)\n\nExpected path: \"message\"\n\nExpected value: \"vin 11111111111111111 already exists\"\nReceived value: \"vin 11111111111111111 zaten var\"\n",
+        "trace": "at Object.toHaveProperty (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:130:24)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      }
+    ]
   }
 }
