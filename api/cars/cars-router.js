@@ -31,8 +31,8 @@ router.post(
   checkVinNumberUnique,
   (req, res, next) => {
     create(req.body)
-      .then(([id]) => {
-        res.status(201).json({ id });
+      .then((car) => {
+        res.status(201).json(car);
       })
       .catch(next);
   },
