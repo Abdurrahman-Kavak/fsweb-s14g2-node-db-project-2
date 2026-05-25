@@ -1,0 +1,184 @@
+{
+  "results": {
+    "tool": {
+      "name": "jest"
+    },
+    "summary": {
+      "tests": 13,
+      "passed": 2,
+      "failed": 11,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1779709327710,
+      "stop": 1779709328775
+    },
+    "tests": [
+      {
+        "name": "[0] sanity check",
+        "duration": 0,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js"
+      },
+      {
+        "name": "server.js [GET] /api/cars [1] gets the correct number of cars",
+        "duration": 27,
+        "status": "failed",
+        "message": "Error: expect(received).toHaveLength(expected)\n\nMatcher error: received value must have a length property whose value must be a number\n\nReceived has type:  object\nReceived has value: {}\n",
+        "trace": "at Object.toHaveLength (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:51:24)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [GET] /api/cars"
+      },
+      {
+        "name": "server.js [GET] /api/cars [2] gets the correct cars",
+        "duration": 25,
+        "status": "failed",
+        "message": "Error: expect(received).toMatchObject(expected)\n\nExpected: [{\"make\": \"toyota\", \"mileage\": 250000, \"model\": \"prius\", \"title\": \"salvage\", \"transmission\": \"CVT\", \"vin\": \"11111111111111111\"}, {\"make\": \"ford\", \"mileage\": 120000, \"model\": \"mustang\", \"title\": \"clean\", \"transmission\": \"manual\", \"vin\": \"22222222222222222\"}, {\"make\": \"honda\", \"mileage\": 220000, \"model\": \"accord\", \"title\": \"clean\", \"transmission\": \"automatic\", \"vin\": \"33333333333333333\"}]\nReceived: {}\n",
+        "trace": "at Object.toMatchObject (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:55:24)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [GET] /api/cars"
+      },
+      {
+        "name": "server.js [GET] /api/cars/:id [3] gets the correct car",
+        "duration": 24,
+        "status": "failed",
+        "message": "Error: expect(received).toMatchObject(expected)\n\n- Expected  - 8\n+ Received  + 1\n\n- Object {\n-   \"make\": \"toyota\",\n-   \"mileage\": 250000,\n-   \"model\": \"prius\",\n-   \"title\": \"salvage\",\n-   \"transmission\": \"CVT\",\n-   \"vin\": \"11111111111111111\",\n- }\n+ Object {}\n",
+        "trace": "at Object.toMatchObject (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:65:24)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [GET] /api/cars/:id"
+      },
+      {
+        "name": "server.js [GET] /api/cars/:id [4] responds with 404 on id not found",
+        "duration": 23,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [GET] /api/cars/:id"
+      },
+      {
+        "name": "server.js [POST] /api/cars [5] creates a car in the database",
+        "duration": 19,
+        "status": "failed",
+        "message": "Error: expect(received).toMatchObject(expected)\n\nMatcher error: received value must be a non-null object\n\nReceived has value: undefined\n",
+        "trace": "at Object.toMatchObject (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:85:25)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [6] responds with the newly created car",
+        "duration": 11,
+        "status": "failed",
+        "message": "Error: expect(received).toMatchObject(expected)\n\n- Expected  - 9\n+ Received  + 1\n\n- Object {\n-   \"id\": 1,\n-   \"make\": \"toyota\",\n-   \"mileage\": 250000,\n-   \"model\": \"prius\",\n-   \"title\": \"salvage\",\n-   \"transmission\": \"CVT\",\n-   \"vin\": \"11111111111111111\",\n- }\n+ Object {}\n",
+        "trace": "at Object.toMatchObject (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:93:25)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [7] responds with a 400 and proper error on missing vin",
+        "duration": 10,
+        "status": "failed",
+        "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n",
+        "trace": "at Object.toBe (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:100:26)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [8] responds with a 400 and proper error on missing make",
+        "duration": 9,
+        "status": "failed",
+        "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n",
+        "trace": "at Object.toBe (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:106:26)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [9] responds with a 400 and proper error on missing model",
+        "duration": 9,
+        "status": "failed",
+        "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n",
+        "trace": "at Object.toBe (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:112:26)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [10] responds with a 400 and proper error on missing mileage",
+        "duration": 9,
+        "status": "failed",
+        "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n",
+        "trace": "at Object.toBe (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:118:26)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [11] responds with a 400 and proper error on invalid vin",
+        "duration": 9,
+        "status": "failed",
+        "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n",
+        "trace": "at Object.toBe (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:124:26)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      },
+      {
+        "name": "server.js [POST] /api/cars [12] responds with a 400 and proper error on non-unique vin",
+        "duration": 11,
+        "status": "failed",
+        "message": "Error: expect(received).toHaveProperty(path, value)\n\nExpected path: \"message\"\nReceived path: []\n\nExpected value: \"vin 11111111111111111 already exists\"\nReceived value: {}\n",
+        "trace": "at Object.toHaveProperty (C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js:130:24)\nat processTicksAndRejections (node:internal/process/task_queues:104:5)\n\n[object Object]",
+        "rawStatus": "failed",
+        "type": "unit",
+        "filePath": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\apo_k\\OneDrive\\Masaüstü\\Workintech\\Projects\\NodeJS\\fsweb-s14g2-node-db-project-2\\codegrade_mvp.test.js > server.js > [POST] /api/cars"
+      }
+    ]
+  }
+}
